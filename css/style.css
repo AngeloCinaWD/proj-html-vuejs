@@ -191,6 +191,25 @@ header {
   height: auto;
 }
 
+#hoverBook {
+  top: 285px;
+  left: 0;
+  width: 280px;
+  background-color: white;
+  display: none;
+}
+
+#contenitore>div:nth-of-type(4):hover #hoverBook {
+  display: initial;
+}
+
+
+
+#hoverBook img {
+  width: 100%;
+  height: auto;
+}
+
 #pageUp1 {
   top: 0px;
   right: 15px;
