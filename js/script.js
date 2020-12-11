@@ -3,7 +3,49 @@ var app = new Vue ({ //instanzio vue
   data: {
     logoHeader: "img/img/logo-sidearea-1.png",
     headerMenu: "img/svg/svg-1.svg",
-    classe: "size13",
-    navBar: ["HOME", "PAGES", "PORTFOLIO", "BLOG", "SHOP", "ELEMENTS"]
+    classe13: "size13",
+    classe16: "size16",
+    classeFlex: "displayFlex",
+    classejustStart: "justifyStart",
+    classejustSB: "justifySpBe",
+    classeFab: "fab",
+    navBar: ["HOME", "PAGES", "PORTFOLIO", "BLOG", "SHOP", "ELEMENTS"],
+    logoFooter: "img/img/logo-sidearea-1.png",
+    classFooSez: "footerSez",
+    // immagine: true,
+    footer: [
+      {
+        immagine: true,
+        urlImg: "img/img/logo-sidearea-1.png",
+        testoP1: "",
+        testoP2:"Let's Get Creative",
+        icona: false,
+        fontAwesome: []
+      },
+      {
+        immagine: false,
+        urlImg: "",
+        testoP1: "maree.qode@gmail.com",
+        testoP2:"+44645321789",
+        icona: false,
+        fontAwesome: []
+      },
+      {
+        immagine: false,
+        urlImg: "",
+        testoP1: "Avenue d'Auderghem 10",
+        testoP2:"1040 Brussels, Belgium",
+        icona: false,
+        fontAwesome: []
+      },
+      {
+        immagine: false,
+        urlImg: "",
+        testoP1: "Stay in touch with us",
+        testoP2:"",
+        icona: true,
+        fontAwesome: ["fa-twitter", "fa-pinterest-p", "fa-facebook-f", "fa-linkedin-in"]
+      }
+    ]
   }
 });

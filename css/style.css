@@ -5,10 +5,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-body {
-  /* background-color: white; */
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -42,6 +38,10 @@ a {
 
 .justifyEnd {
   justify-content: flex-end;
+}
+
+.justifySpBe {
+  justify-content: space-between;
 }
 
 .itemsCenter {
@@ -100,10 +100,8 @@ a {
   color: #EB6950;
 }
 
-.lobster {
-  font-style: italic;
-  font-weight: bold;
-  font-family: 'Lobster', cursive;
+.Playfair {
+  font-family: 'Playfair Display', serif;
 }
 
 .weight300 {
@@ -420,10 +418,28 @@ footer {
 #footerMenu {
   width: 60%;
   margin: auto;
+  padding-left: 15px;
 }
 
 .footerSez {
   width: calc(100% / 4);
-  height: 300px;
-  border: 1px solid black;
+}
+
+#logoFooter {
+  width: 125px;
+  margin-bottom: 10px;
+}
+
+#logoFooter img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footerSez p:first-of-type {
+  margin-bottom: 12px;
+}
+
+#footerMenu div:last-child>div {
+  width: 142px;
 }
