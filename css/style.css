@@ -394,6 +394,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 #contenitoreSez4>div:nth-of-type(2) {
@@ -508,10 +509,37 @@ footer {
 
 .footerSez p:first-of-type {
   margin-bottom: 12px;
+  word-wrap: break-word;
 }
 
 #iconeFont {
   display: flex;
   justify-content: space-between;
   width: 142px;
+}
+
+/* ////////////////MEDIA QUERY//////////// */
+
+@media all and (min-width: 1000px) and (max-width: 1500px) {
+  #centerLeft {
+    padding-left: 0;
+  }
+
+  #centerRight {
+    padding-right: 0;
+  }
+
+  #centerLeft div {
+    margin-left: 0px;
+  }
+
+  #contenitoreSez4>div:nth-of-type(2) {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .footerSez {
+    width: calc(100% / 4 - 10px);
+    margin: 0 5px;
+  }
 }
