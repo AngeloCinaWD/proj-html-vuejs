@@ -13,16 +13,19 @@
     </head>
     <body>
 
+      <!-- DIV contenitore per istanziare VUE  -->
       <div id="app">
-        <header class="displayFlex justifyStart itemsCenter backFCFAF68C">
+
+        <!-- ////////////HEADER/////////// -->
+        <header>
           <div id="logoHeader">
             <div>
               <img :src="logoHeader" alt="">
             </div>
           </div>
-          <nav id="navbar" class="displayFlex justifyEnd itemsCenter">
-            <ul class="displayFlex justifyEnd">
-              <li v-for="item in navBar"><a :class="classe13" href="#">{{item}}</a></li>
+          <nav id="navbar">
+            <ul>
+              <li v-for="item in navBar"><a :class="classe13" :href="item.linkHref">{{item.testo}}</a></li>
             </ul >
             <div>
               <img :src="headerMenu" alt="">
@@ -30,13 +33,16 @@
           </nav>
         </header>
 
+        <!-- ///////////////////PARTE CENTRALE DELLA PAGINA ///////////////////////////////////////-->
         <main>
-          <section id="sezione1" class="backFCFAF68C">
-            <div id="carousel" class="displayFlex justifyCenter itemsCenter">
+
+          <!-- ///////////////SEZIONE 1////////////////////// -->
+          <section id="sezione1">
+            <div id="carousel">
               <div id="chevronLeft">
-                <i class="fas fa-chevron-circle-left colorF5D8CA"></i>
+                <i class="fas fa-chevron-circle-left"></i>
               </div>
-              <div id="centerLeft" class="backFCFAF68C">
+              <div id="centerLeft">
                 <div class="weight300">Devotion that never <span class="Playfair">ends</span></div>
                 <div class="grey">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</div>
                 <div>READ MORE</div>
@@ -46,18 +52,20 @@
 
               </div>
               <div id="chevronRight">
-                <i class="fas fa-chevron-circle-right colorF5D8CA"></i>
+                <i class="fas fa-chevron-circle-right"></i>
               </div>
             </div>
-            <div id="points" class="displayFlex justifyCenter itemsCenter colorF5D8CA">
+            <div id="points">
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
-              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle size12"></i>
             </div>
           </section>
 
+
+          <!-- ///////////////SEZIONE 2 ////////////////////// -->
           <section id="sezione2">
-            <div id="contenitore" class="displayFlex justifyCenter flexwrapWrap">
+            <div id="contenitore">
               <div class="immagine">
                 <img src="img/img/h-2-port-img-1.jpg" alt="">
               </div>
@@ -66,16 +74,16 @@
               </div>
               <div class="immagine relative">
                 <img src="img/img/h-2-port-img-3.jpg" alt="">
-                <div id="refresh" class="absolute immaginina displayFlex justifyCenter itemsCenter">
+                <div id="refresh" class="absolute">
                   <img src="img/svg/svg-4.svg" alt="">
                 </div>
-                <div id="carrello" class="absolute immaginina displayFlex justifyCenter itemsCenter backFFFFFF">
+                <div id="carrello" class="absolute">
                   <img src="img/svg/svg-6.svg" alt="">
                 </div>
               </div>
               <div class="immagine relative">
                 <img src="img/img/h-2-port-img-4.jpg" alt="">
-                <div id="hoverBook" class="absolute backFFFFFF">
+                <div id="hoverBook" class="absolute">
                   <img src="img/img/illustration.png" alt="">
                 </div>
               </div>
@@ -84,64 +92,68 @@
               </div>
               <div class="immagine relative">
                 <img src="img/img/h-2-port-img-6.jpg" alt="">
-                <div id="pageUp2a" class="backC0E1CF absolute immaginina displayFlex justifyCenter itemsCenter">
+                <div id="pageUp2a" class="absolute">
                   <img src="img/svg/svg-2.svg" alt="">
                 </div>
-                <div id="pageUp2b" class="backC0E1CF absolute immaginina displayFlex justifyCenter itemsCenter">
+                <div id="pageUp2b" class="absolute">
                   <img src="img/svg/svg-2.svg" alt="">
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="sezione3" class="relative backFFFFFF">
+
+          <!-- ///////////////SEZIONE 3 ////////////////////// -->
+          <section id="sezione3" class="relative">
             <div class="weight300 textCenter size50">Working <span class="Playfair">process</span></div>
-            <div id="filo" class="displayFlex justifyStart">
-              <div class="imgSez3 displayFlex justifyCenter itemsCenter">
-                <div class="circleImg displayFlex justifyCenter itemsCenter backFAF7F1">
+            <div id="filo">
+              <div class="imgSez3">
+                <div class="circleImg">
                   <i class="fas fa-lightbulb colorBADAC9"></i>
                 </div>
               </div>
-              <div class="imgSez3 displayFlex justifyCenter itemsCenter">
-                <div class="circleImg displayFlex justifyCenter itemsCenter backFAF7F1">
+              <div class="imgSez3">
+                <div class="circleImg">
                   <i class="far fa-comment colorF8D12D"></i>
                 </div>
               </div>
-              <div class="imgSez3 displayFlex justifyCenter itemsCenter">
-                <div class="circleImg displayFlex justifyCenter itemsCenter backFAF7F1">
+              <div class="imgSez3">
+                <div class="circleImg">
                   <i class="fas fa-cloud color80465F"></i>
                 </div>
               </div>
-              <div class="imgSez3 displayFlex justifyCenter itemsCenter">
-                <div class="circleImg displayFlex justifyCenter itemsCenter backFAF7F1">
+              <div class="imgSez3">
+                <div class="circleImg">
                   <i class="fas fa-marker colorEB6950"></i>
                 </div>
               </div>
             </div>
 
-            <div id="sottoFilo" class="displayFlex justifyStart">
-              <div class="imgSez3">
+            <div id="sottoFilo">
+              <div class="imgSez3S">
                 <p class="size16 textCenter">First theres an idea</p>
                 <p class="grey size13 textCenter">Lorem ipsum dolor sit amet, conetu adipisc sed be et ore aliqua pleasue itself.</p>
               </div>
-              <div class="imgSez3">
+              <div class="imgSez3S">
                 <p class="size16 textCenter">Then we talk about</p>
                 <p class="grey size13 textCenter">Lorem ipsum dolor sit amet, conetu adipisc sed be et ore aliqua pleasue itself.</p>
               </div>
-              <div class="imgSez3">
+              <div class="imgSez3S">
                 <p class="size16 textCenter">And we think about</p>
                 <p class="grey size13 textCenter">Lorem ipsum dolor sit amet, conetu adipisc sed be et ore aliqua pleasue itself.</p>
               </div>
-              <div class="imgSez3">
+              <div class="imgSez3S">
                 <p class="size16 textCenter">So we draw along</p>
                 <p class="grey size13 textCenter">Lorem ipsum dolor sit amet, conetu adipisc sed be et ore aliqua pleasue itself.</p>
               </div>
             </div>
-            <div id="pageUp3" class="backC0E1CF absolute immaginina displayFlex justifyCenter itemsCenter">
+            <div id="pageUp3" class="absolute">
               <img src="img/svg/svg-2.svg" alt="">
             </div>
           </section>
 
+
+          <!-- ///////////////SEZIONE 4 ////////////////////// -->
           <section id="sezione4" class="relative">
             <img src="img/img/back_sez4.png" alt="">
             <div id="contenitoreSez4" class="textCenter absolute">
@@ -151,8 +163,10 @@
             </div>
           </section>
 
-          <section id="sezione5" class="relative backFFFFFF">
-            <div id="blog" class="displayFlex justifyStart">
+
+          <!-- ///////////////SEZIONE 5 ////////////////////// -->
+          <section id="sezione5" class="relative">
+            <div id="blog">
               <div class="pictureBlog relative">
                 <img src="img/img/h-2-blog-img-1.jpg" alt="">
                 <p class="size22">This way, loves: a detailed guide through new design</p>
@@ -184,29 +198,29 @@
                 </div>
               </div>
             </div>
-            <div id="pageUp4" class="backC0E1CF absolute immaginina displayFlex justifyCenter itemsCenter">
+            <div id="pageUp5" class="absolute">
               <img src="img/svg/svg-2.svg" alt="">
             </div>
           </section>
         </main>
+        <!-- ///////////////FINE MAIN ////////////////////// -->
 
-        <footer class="backC0E1CF">
-          <div id="footerMenu" :class="[classeFlex, classejustStart]">
+
+        <!-- ///////////////FOOTER ////////////////////// -->
+        <footer>
+          <div id="footerMenu">
             <div :class="classFooSez" v-for="sezione in footer">
               <div id="logoFooter" v-if="sezione.immagine">
                 <img :src="sezione.urlImg" alt="">
               </div>
               <p v-else :class="classe16">{{sezione.testoP1}}</p>
-              <div v-if="sezione.icona" :class="[classe16, classeFlex, classejustSB]">
+              <div id="iconeFont" v-if="sezione.icona" :class="classe16">
                 <i v-for="font in sezione.fontAwesome":class="[classeFab, font]"></i>
               </div>
               <p v-else :class="classe16">{{sezione.testoP2}}</p>
             </div>
           </div>
         </footer>
-
-
-
       </div>
 
       <script src="js/script.js"></script>

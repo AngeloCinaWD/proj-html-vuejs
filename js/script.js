@@ -5,14 +5,35 @@ var app = new Vue ({ //instanzio vue
     headerMenu: "img/svg/svg-1.svg",
     classe13: "size13",
     classe16: "size16",
-    classeFlex: "displayFlex",
-    classejustStart: "justifyStart",
-    classejustSB: "justifySpBe",
     classeFab: "fab",
-    navBar: ["HOME", "PAGES", "PORTFOLIO", "BLOG", "SHOP", "ELEMENTS"],
     logoFooter: "img/img/logo-sidearea-1.png",
     classFooSez: "footerSez",
-    // immagine: true,
+    navBar: [
+      {
+        testo: "HOME",
+        linkHref:"http://www.google.com"
+      },
+      {
+        testo: "PAGES",
+        linkHref:"http://www.google.com"
+      },
+      {
+        testo: "PORTFOLIO",
+        linkHref:"http://www.google.com"
+      },
+      {
+        testo: "BLOG",
+        linkHref:"http://www.google.com"
+      },
+      {
+        testo: "SHOP",
+        linkHref:"http://www.google.com"
+      },
+      {
+        testo: "ELEMENTS",
+        linkHref:"http://www.google.com"
+      }
+    ],
     footer: [
       {
         immagine: true,
