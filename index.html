@@ -17,20 +17,15 @@
         <header class="displayFlex justifyStart itemsCenter backFCFAF68C">
           <div id="logoHeader">
             <div>
-              <img src="img/img/logo-sidearea-1.png" alt="">
+              <img :src="logoHeader" alt="">
             </div>
           </div>
           <nav id="navbar" class="displayFlex justifyEnd itemsCenter">
             <ul class="displayFlex justifyEnd">
-              <li><a class="size13" href="#">HOME</a></li>
-              <li><a class="size13" href="#">PAGES</a></li>
-              <li><a class="size13" href="#">PORTFOLIO</a></li>
-              <li><a class="size13" href="#">BLOG</a></li>
-              <li><a class="size13" href="#">SHOP</a></li>
-              <li><a class="size13" href="#">ELEMENTS</a></li>
+              <li v-for="item in navBar"><a :class="classe" href="#">{{item}}</a></li>
             </ul >
             <div>
-              <img src="img/svg/svg-1.svg" alt="">
+              <img :src="headerMenu" alt="">
             </div>
           </nav>
         </header>
