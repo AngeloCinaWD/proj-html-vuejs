@@ -36,35 +36,35 @@ var app = new Vue ({ //instanzio vue
     ],
     footer: [
       {
-        immagine: true,
+        // immagine: true,
         urlImg: "img/img/logo-sidearea-1.png",
         testoP1: "",
         testoP2:"Let's Get Creative",
-        icona: false,
+        // icona: false,
         fontAwesome: []
       },
       {
-        immagine: false,
+        // immagine: false,
         urlImg: "",
         testoP1: "maree.qode@gmail.com",
         testoP2:"+44645321789",
-        icona: false,
+        // icona: false,
         fontAwesome: []
       },
       {
-        immagine: false,
+        // immagine: false,
         urlImg: "",
         testoP1: "Avenue d'Auderghem 10",
         testoP2:"1040 Brussels, Belgium",
-        icona: false,
+        // icona: false,
         fontAwesome: []
       },
       {
-        immagine: false,
+        // immagine: false,
         urlImg: "",
         testoP1: "Stay in touch with us",
         testoP2:"",
-        icona: true,
+        // icona: true,
         fontAwesome: ["fa-twitter", "fa-pinterest-p", "fa-facebook-f", "fa-linkedin-in"]
       }
     ]

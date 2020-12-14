@@ -533,6 +533,11 @@ footer {
     margin-left: 0px;
   }
 
+  #hoverBook {
+    top: 200px;
+    width: 200px;
+  }
+
   #contenitoreSez4>div:nth-of-type(2) {
     width: 80%;
     margin: 20px auto;

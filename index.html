@@ -210,11 +210,11 @@
         <footer>
           <div id="footerMenu">
             <div :class="classFooSez" v-for="sezione in footer">
-              <div id="logoFooter" v-if="sezione.immagine">
+              <div id="logoFooter" v-if="sezione.urlImg">
                 <img :src="sezione.urlImg" alt="">
               </div>
               <p v-else :class="classe16">{{sezione.testoP1}}</p>
-              <div id="iconeFont" v-if="sezione.icona" :class="classe16">
+              <div id="iconeFont" v-if="sezione.fontAwesome && sezione.fontAwesome.length > 0" :class="classe16">
                 <i v-for="font in sezione.fontAwesome":class="[classeFab, font]"></i>
               </div>
               <p v-else :class="classe16">{{sezione.testoP2}}</p>
