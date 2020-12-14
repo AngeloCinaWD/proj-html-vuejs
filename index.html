@@ -18,7 +18,7 @@
 
         <!-- ////////////HEADER/////////// -->
         <header>
-          <div id="logoHeader">
+          <div id="logoHeader" :class="cursor">
             <div>
               <img :src="logoHeader" alt="">
             </div>
@@ -28,7 +28,7 @@
               <li v-for="item in navBar"><a :class="classe13" :href="item.linkHref">{{item.testo}}</a></li>
             </ul >
             <div>
-              <img :src="headerMenu" alt="">
+              <img :src="headerMenu" alt="" :class="cursor">
             </div>
           </nav>
         </header>
@@ -39,19 +39,19 @@
           <!-- ///////////////SEZIONE 1////////////////////// -->
           <section id="sezione1">
             <div id="carousel">
-              <div id="chevronLeft">
+              <div id="chevronLeft" class="cursorPointer">
                 <i class="fas fa-chevron-circle-left"></i>
               </div>
               <div id="centerLeft">
                 <div class="weight300">Devotion that never <span class="Playfair">ends</span></div>
                 <div class="grey">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</div>
-                <div>READ MORE</div>
+                <div class="cursorPointer">READ MORE</div>
               </div>
               <div id="centerRight">
                 <img src="img/img/immagine_carousel.png" alt="">
 
               </div>
-              <div id="chevronRight">
+              <div id="chevronRight" class="cursorPointer">
                 <i class="fas fa-chevron-circle-right"></i>
               </div>
             </div>
@@ -74,10 +74,10 @@
               </div>
               <div class="immagine relative">
                 <img src="img/img/h-2-port-img-3.jpg" alt="">
-                <div id="refresh" class="absolute">
+                <div id="refresh" class="absolute cursorPointer">
                   <img src="img/svg/svg-4.svg" alt="">
                 </div>
-                <div id="carrello" class="absolute">
+                <div id="carrello" class="absolute cursorPointer">
                   <img src="img/svg/svg-6.svg" alt="">
                 </div>
               </div>
@@ -92,10 +92,10 @@
               </div>
               <div class="immagine relative">
                 <img src="img/img/h-2-port-img-6.jpg" alt="">
-                <div id="pageUp2a" class="absolute">
+                <div id="pageUp2a" class="absolute cursorPointer">
                   <img src="img/svg/svg-2.svg" alt="">
                 </div>
-                <div id="pageUp2b" class="absolute">
+                <div id="pageUp2b" class="absolute cursorPointer">
                   <img src="img/svg/svg-2.svg" alt="">
                 </div>
               </div>
@@ -147,7 +147,7 @@
                 <p class="grey size13 textCenter">Lorem ipsum dolor sit amet, conetu adipisc sed be et ore aliqua pleasue itself.</p>
               </div>
             </div>
-            <div id="pageUp3" class="absolute">
+            <div id="pageUp3" class="absolute cursorPointer">
               <img src="img/svg/svg-2.svg" alt="">
             </div>
           </section>
@@ -159,7 +159,7 @@
             <div id="contenitoreSez4" class="textCenter absolute">
               <div class="weight300 textCenter size50">Want to work with us? Send us <span class="Playfair">a message!</span></div>
               <div class="grey size16 textCenter">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo.</div>
-              <div class="textCenter backD8F0E3">CONTACT</div>
+              <div class="textCenter backD8F0E3 cursorPointer">CONTACT</div>
             </div>
           </section>
 
@@ -198,7 +198,7 @@
                 </div>
               </div>
             </div>
-            <div id="pageUp5" class="absolute">
+            <div id="pageUp5" class="absolute cursorPointer">
               <img src="img/svg/svg-2.svg" alt="">
             </div>
           </section>
@@ -210,12 +210,12 @@
         <footer>
           <div id="footerMenu">
             <div :class="classFooSez" v-for="sezione in footer">
-              <div id="logoFooter" v-if="sezione.urlImg">
+              <div id="logoFooter" v-if="sezione.urlImg" :class="cursor">
                 <img :src="sezione.urlImg" alt="">
               </div>
               <p v-else :class="classe16">{{sezione.testoP1}}</p>
               <div id="iconeFont" v-if="sezione.fontAwesome && sezione.fontAwesome.length > 0" :class="classe16">
-                <i v-for="font in sezione.fontAwesome":class="[classeFab, font]"></i>
+                <i v-for="font in sezione.fontAwesome":class="[classeFab, font, cursor]"></i>
               </div>
               <p v-else :class="classe16">{{sezione.testoP2}}</p>
             </div>

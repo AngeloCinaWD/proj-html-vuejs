@@ -8,6 +8,7 @@ var app = new Vue ({ //instanzio vue
     classeFab: "fab",
     logoFooter: "img/img/logo-sidearea-1.png",
     classFooSez: "footerSez",
+    cursor: "cursorPointer",
     navBar: [
       {
         testo: "HOME",

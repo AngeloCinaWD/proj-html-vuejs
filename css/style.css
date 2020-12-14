@@ -84,6 +84,10 @@ a {
   text-align: center;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
 /* //////// HEADER /////////// */
 
 header {
@@ -98,7 +102,6 @@ header {
 
 #logoHeader {
   flex: 2;
-  cursor: pointer;
 }
 
 #logoHeader>div {
@@ -125,10 +128,6 @@ header {
 
 #navbar>ul li, #navbar>div {
   margin-left: 40px;
-}
-
-#navbar>div {
-  cursor: pointer;
 }
 
 /* /////////////////MAIN//////////////// */
